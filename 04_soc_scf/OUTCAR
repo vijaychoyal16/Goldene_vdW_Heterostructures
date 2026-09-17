@@ -1,0 +1,54 @@
+ vasp.6.2.0 18Jan21 (build Jun 04 2023 13:53:18) complex                        
+  
+ executed on             LinuxIFC date 2026.09.02  10:06:19
+ running on    8 total cores
+ distrk:  each k-point on    8 cores,    1 groups
+ distr:  one band on NCORE=   1 cores,    8 groups
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+ INCAR:
+   SYSTEM = Goldene_TMD_SOC_SCF
+   PREC = Accurate
+   ENCUT = 520
+   EDIFF = 1E-7
+   NELM = 200
+   IBRION = -1
+   NSW = 0
+   ISIF = 2
+   ISMEAR = 1
+   SIGMA = 0.05
+   IVDW = 12
+   LASPH = .TRUE.
+   ADDGRID = .TRUE.
+   LREAL = .FALSE.
+   ISYM = 0
+   LSORBIT = .TRUE.
+   LNONCOLLINEAR = .TRUE.
+   SAXIS = 0 0 1
+   GGA_COMPAT = .FALSE.
+   LCHARG = .TRUE.
+   LWAVE = .TRUE.
+
+ POTCAR:    PAW_PBE Au 04Oct2007                  
+ POTCAR:    PAW_PBE Mo 08Apr2002                  
+ POTCAR:    PAW_PBE S 06Sep2000                   
+ -----------------------------------------------------------------------------
+|                                                                             |
+|     EEEEEEE  RRRRRR   RRRRRR   OOOOOOO  RRRRRR      ###     ###     ###     |
+|     E        R     R  R     R  O     O  R     R     ###     ###     ###     |
+|     E        R     R  R     R  O     O  R     R     ###     ###     ###     |
+|     EEEEE    RRRRRR   RRRRRR   O     O  RRRRRR       #       #       #      |
+|     E        R   R    R   R    O     O  R   R                               |
+|     E        R    R   R    R   O     O  R    R      ###     ###     ###     |
+|     EEEEEEE  R     R  R     R  OOOOOOO  R     R     ###     ###     ###     |
+|                                                                             |
+|     ERROR: non collinear calculations require that VASP is compiled         |
+|      without the flag -DNGXhalf and -DNGZhalf                               |
+|                                                                             |
+|       ---->  I REFUSE TO CONTINUE WITH THIS SICK JOB ... BYE!!! <----       |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
