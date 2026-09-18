@@ -1,0 +1,1 @@
+python3 make_distance_scan_folders.py   --poscar POSCAR   --bottom Au   --top Bi S   --distances 2.75 3.00 3.25 3.45 3.75 4.00 4.25   --incar INCAR   --kpoints KPOINTS   --potcar POTCAR   --slurm runVasp.slurm   --center
